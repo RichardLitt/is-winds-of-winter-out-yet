@@ -1,33 +1,67 @@
 <!DOCTYPE html>
 <head>
-<style type="text/css">
-  body {
-    background: #fff;
-  }
-  p {
-    text-align: center;
-    margin: 20% 0px 0px 0px;
-    color: #000;
-    font-size: 100pt;
-    padding: 0px;
-    line-height: 100pt;
-  }
-  @media all and (min-width: 767px) {
-    body {
-      background: #000 url('./9H9nG.jpg') no-repeat fixed top;
-      background-size: contain;
-    }
-    p {
-      text-align: right;
-      margin-top: 40%;
-      margin-right: 10%;
-      color: #FFF;
-      font-size: 100pt;
-      padding: 0px;
-      line-height: 100pt;
-    }
-  }
-</style>
+    <meta charset="utf-8">
+    <title>Is Winds of Winter Out Yet?</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Richard Littauer">
+    <meta name="copyright" content="&copy; Richard Littauer 2015">
+    <meta name="description" content="Is Winds of Winter Out Yet?">
+
+    <meta property="og:description" content="Is Winds of Winter Out Yet?" />
+    <meta property="og:url" content="http://iswindsofwinteroutyet.com/" />
+    <meta property="og:site_name" content="Richard Littauer" />
+    <meta property="og:title" content="Is Winds of Winter Out Yet?" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://iswindsofwinteroutyet.com/small.jpg" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="900" />
+    <meta property="og:image:height" content="600" />
+
+    <!-- Twitter: card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Richard Littauer">
+    <meta name="twitter:description" content="Is Winds of Winter Out Yet?">
+    <meta name="twitter:image" content="http://iswindsofwinteroutyet.com/small.jpg">
+    <meta name="twitter:url" content="http://iswindsofwinteroutyet.com">
+
+    <!-- OSMT -->
+    <link rel="profile" href="https://github.com/RichardLitt/open-source-metatags/" />
+    <meta property="os:repo" content="https://github.com/RichardLitt/is-winds-of-winter-out-yet" />
+    <meta property="os:rcs_type" content="git" />
+    <meta property="os:src" content="git@github.com:RichardLitt/is-winds-of-winter-out-yet.git" />
+
+    <!-- Favicon -->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAADWpDQA/PjtANWqPQDXq0AA6NeeAOzTmwDy6s0A/P7/AM+ZHQDSmxoA//7/AO/YqgD38N8A8NytAN21VQDUoykA37VVAN60WwDLjwAA8eC5AN25YQDy5sIA9OPCANWrQQDPnB4A0J0hANGdIQD46tcA050hAOTGfwDTnycA5cuFAPHhvQDVqDkA4bplAM2WDQDYqj8A69KaAOzUoAD//PsA48N3ANmxSwDUnB8A7dusANq0VADetFQA7t2yAObMiQDcuGAA/PPqANenNwDy5sQA16k9AOnVmwDYrUAAwn8AAPXpzQDOmx0A//75AP79/wD//f8A///8ANuwSQD369MA5MR7AOvbrQDSniYAxosAAOXIfgDTniYA+PDZAPv05QD69usA9ebFAOHAcAD8//0A0ZobAO3csQDSoScA79yxANShJwDetVkA1qY2AOC+awD8+fUA5tWdAPr//gDy7M8A26tFAPv//gD9//4A///+APjt0gDIhgUAz6MuAN20VwD48d4A0aExAPrz5ADozIwAu3IAAOjOkgDz474AzJUOAN+9aQDo1JsA4L9vAM+VFwD158oA6tWeAPv//wDYrUwA/f//AP///wD46tMA0Z4gAMeHAADTnyMA696wAMeLAwDmyIEA5MqHANKiLADt4bkA+vfoAN+5ZwDx478A6dCQAPPjvwDZpjgA+/nuALx4AQDWrEEA9efLAP/+/QDZr0oA4cZ8AO7YqADt3KsA792uAPjx4AD58eAA3bdZAMuSBwDnzZEA3rxoAMyWEwD9+PUA2as/AM2YGQD9/vUA9ubJAM+YGQDNmxkA/P7+AM+ZHAD+/v4A//7+AOTDdADQnR8A0J8lAOPHgADlx4AAz6MoAO3drwDnyIMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcQpLCppxhjNpcQx8mnFwcXFbVgpPfXBBXjUqeSgKcCdbcXE8P6MeXwkjgHsyFQ9XcDBocKKWJUwcjHCNlZuQnXA4gRdnYHBtNJo6KXSPFCAKW4pdNx+cZoeFkjYWBFiJCihzanigEGNORR0KPQqccXFImnGccA5DEpEKWlsKcHFbVW9ccJM+GgNShAFWpURxW5cCAFM5iKQsMSR6ERgmB3CcPVGDL3ETIXE7SmSeCnFxVFEZn3IKiGuCcEBhUGU7CqGZYpQrDRIImH4Fi0czW3BGcQoGLUKOIn93TXFxcHFxcVtbCgtgLnVZSWxxCgpbcHEKcW49Wht2PJ1wmltwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+
+    <style type="text/css">
+      body {
+        background: #fff;
+      }
+      p {
+        text-align: center;
+        margin: 20% 0px 0px 0px;
+        color: #000;
+        font-size: 100pt;
+        padding: 0px;
+        line-height: 100pt;
+      }
+      @media all and (min-width: 767px) {
+        body {
+          background: #000 url('./9H9nG.jpg') no-repeat fixed top;
+          background-size: contain;
+        }
+        p {
+          text-align: right;
+          margin-top: 40%;
+          margin-right: 10%;
+          color: #FFF;
+          font-size: 100pt;
+          padding: 0px;
+          line-height: 100pt;
+        }
+      }
+    </style>
 </head>
 <body>
   <p>NO.</p>
